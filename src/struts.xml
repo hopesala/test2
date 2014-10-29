@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<include file="struts-default.xml"/>
+<package name="pack" extends="struts-default">
+
+
+<action name="success" >
+<result>/userpage.jsp</result>
+</action>
+<action name="success2" >
+<result>/teacherpage.jsp</result>
+</action>
+
+
+
+<action name="search" class="pack.Fuction" method="searchteacher" >
+<result>/result.jsp</result>
+</action>
+
+<action name="book" class="pack.Fuction" method="booktime" >
+<result name="success">/userpage.jsp</result>
+<result name="fa1">/fa1.jsp</result>
+<result name="fa2">/fa2.jsp</result>
+</action>
+
+<action name="list" class="pack.Fuction" method="listbook">
+<result>/Mybook.jsp</result>
+</action>
+<action name="list1" class="pack.Fuction" method="listbook1">
+<result>/Mybook1.jsp</result>
+</action>
+
+<action name="delete1" class="pack.Fuction" method="deleteone">
+<result>/userpage.jsp</result>
+</action>
+
+<action name="edit" class="pack.Fuction" method="edit">
+<result>/teacherpage.jsp</result>
+</action>
+<action name="input" class="pack.Fuction" method="set" >
+<result>/edit.jsp</result>
+</action>
+
+
+
+
+</package>
+</struts>  

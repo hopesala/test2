@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="pack" location="15,10" size="280,140">
+    <action name="HelloWorld" location="68,60" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/index.jsp" location="80,192" size="150,55" />
+  <include file="struts-default.xml" location="10,310" size="150,30" />
+  <webResource name="index.jsp" path="index.jsp" location="500,50" size="150,55" />
+</Struts2Diagram>
+
